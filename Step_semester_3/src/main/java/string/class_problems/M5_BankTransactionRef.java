@@ -16,14 +16,12 @@ public class M5_BankTransactionRef {
             return "Invalid: wrong length";
         }
 
-        // Validate first 3 characters are letters
         for (int i = 0; i < 3; i++) {
             if (!Character.isLetter(reference.charAt(i))) {
                 return "Invalid: bank code must be 3 letters";
             }
         }
 
-        // Validate remaining 11 characters are digits
         for (int i = 3; i < 14; i++) {
             if (!Character.isDigit(reference.charAt(i))) {
                 return "Invalid: non-digit body";

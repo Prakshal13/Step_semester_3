@@ -13,7 +13,6 @@ public class M5_WordFrequencyReport {
             return;
         }
 
-        // Normalize: convert to lowercase and strip punctuation using replace()
         String cleaned = feedback.toLowerCase()
                 .replace(".", "")
                 .replace(",", "")
@@ -22,7 +21,6 @@ public class M5_WordFrequencyReport {
                 .replace(";", "")
                 .replace(":", "");
 
-        // Split cleaned text into words using whitespace pattern
         String[] words = cleaned.trim().split("\\s+");
 
         Map<String, Integer> freqMap = new HashMap<>();
@@ -34,7 +32,6 @@ public class M5_WordFrequencyReport {
             freqMap.put(word, freqMap.getOrDefault(word, 0) + 1);
         }
 
-        // Sort by count in descending order
         List<Map.Entry<String, Integer>> entryList = new ArrayList<>(freqMap.entrySet());
         entryList.sort((a, b) -> b.getValue().compareTo(a.getValue()));
 

@@ -16,14 +16,12 @@ public class M4_LibraryIsbnValidator {
             return "Invalid: wrong length";
         }
 
-        // Validate first 3 characters are letters
         for (int i = 0; i < 3; i++) {
             if (!Character.isLetter(code.charAt(i))) {
                 return "Invalid: publisher code must be 3 letters";
             }
         }
 
-        // Validate remaining 10 characters are digits
         for (int i = 3; i < 13; i++) {
             if (!Character.isDigit(code.charAt(i))) {
                 return "Invalid: non-digit body";
