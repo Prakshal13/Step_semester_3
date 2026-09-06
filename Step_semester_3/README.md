@@ -1,5 +1,21 @@
 # Step_semester_3
 
+## Date: 29-08-2026
+
+**Today's Work:**
+- Studied Constructors and Java Keywords (this(), this, final, static blocks, and instanceof).
+- Implemented Week 4 Category B live-coding session problems.
+- Completed Week 4 Category B take-home assignment containing 5 problems.
+
+**Next Session Plan:**
+- Inheritance and Polymorphism in Java.
+
+
+**Issues Faced:**
+- None
+
+---
+
 ## Date: 22-08-2026
 
 **Today's Work:**
