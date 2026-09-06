@@ -14,8 +14,6 @@ public class M5_MovieReviewProfiler {
         int longCount = 0;
 
         for (String word : words) {
-            // Strip any trailing or leading punctuation if needed, but word length is based on letters
-            // As per problem description: Short (1-4 letters), Medium (5-8 letters), Long (9+ letters)
             int len = word.length();
             if (len >= 1 && len <= 4) {
                 shortCount++;

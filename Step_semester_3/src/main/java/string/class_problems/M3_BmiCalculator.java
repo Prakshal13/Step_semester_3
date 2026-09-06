@@ -35,18 +35,17 @@ public class M3_BmiCalculator {
     }
 
     public static void main(String[] args) {
-        // Sample test team (including sample values: 1.75m/70kg and 1.60m/90kg)
         double[] heights = {1.75, 1.60, 1.80, 1.65, 1.70, 1.55, 1.85, 1.72, 1.68, 1.78};
         double[] weights = {70.0, 90.0, 60.0, 75.0, 68.0, 42.0, 95.0, 80.0, 58.0, 72.0};
 
-        System.out.println("Sample Individual Outputs:");
+        System.out.println("Sample Outputs:");
         for (int i = 0; i < 2; i++) {
             double bmi = weights[i] / (heights[i] * heights[i]);
             System.out.printf("Person %d — Height: %.2f m, Weight: %.0f kg -> BMI: %.2f | Status: %s%n",
                     (i + 1), heights[i], weights[i], bmi, getBmiStatus(bmi));
         }
 
-        System.out.println("\nFull Team Wellness Report (10 Persons):");
+        System.out.println("\nWellness Report:");
         printWellnessReport(heights, weights);
     }
 }

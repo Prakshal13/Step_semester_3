@@ -23,13 +23,13 @@ public class M4_WarehouseInventoryBalancer {
             if (sectionA[i] > maxQty) {
                 maxQty = sectionA[i];
                 maxSection = "Section A";
-                maxItemIndex = i + 1; // 1-based item index
+                maxItemIndex = i + 1;
             }
 
             if (sectionB[i] > maxQty) {
                 maxQty = sectionB[i];
                 maxSection = "Section B";
-                maxItemIndex = i + 1; // 1-based item index
+                maxItemIndex = i + 1;
             }
         }
 

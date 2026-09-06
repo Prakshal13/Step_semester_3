@@ -22,7 +22,6 @@ public class M1_RockPaperScissors {
         String[] moves = {"Rock", "Paper", "Scissors"};
         Random random = new Random();
 
-        // Sample predefined player moves for a live demo (N = 5)
         String[] playerMoves = {"Rock", "Paper", "Scissors", "Rock", "Paper"};
         int totalRounds = playerMoves.length;
 
@@ -33,17 +32,9 @@ public class M1_RockPaperScissors {
         int losses = 0;
         int draws = 0;
 
-        System.out.println("--- Starting Rock-Paper-Scissors Match (5 Rounds) ---\n");
-
         for (int i = 0; i < totalRounds; i++) {
-            String playerMove = playerMoves[i];
-            // Predefined moves matching sample run
-            if (i == 0) computerMoves[i] = "Scissors";
-            else if (i == 1) computerMoves[i] = "Paper";
-            else if (i == 2) computerMoves[i] = "Rock";
-            else computerMoves[i] = moves[random.nextInt(moves.length)];
-
-            results[i] = playRound(playerMove, computerMoves[i]);
+            computerMoves[i] = moves[random.nextInt(moves.length)];
+            results[i] = playRound(playerMoves[i], computerMoves[i]);
 
             if (results[i].equals("Player Wins")) {
                 wins++;
@@ -53,8 +44,7 @@ public class M1_RockPaperScissors {
                 draws++;
             }
 
-            System.out.printf("Round %d — Player: %s, Computer: %s | %s%n",
-                    (i + 1), playerMove, computerMoves[i], results[i]);
+            System.out.println("Round " + (i + 1) + " — Player: " + playerMoves[i] + ", Computer: " + computerMoves[i] + " -> " + results[i]);
         }
 
         System.out.println("\n------------------------------------------------------------");

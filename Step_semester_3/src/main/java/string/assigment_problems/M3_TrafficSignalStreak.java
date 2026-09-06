@@ -27,7 +27,6 @@ public class M3_TrafficSignalStreak {
             }
         }
 
-        // Final check for trailing streak
         if (currentStreak > maxStreak) {
             maxStreak = currentStreak;
             longestChar = currentChar;
