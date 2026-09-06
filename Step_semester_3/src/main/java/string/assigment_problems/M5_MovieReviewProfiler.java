@@ -1,0 +1,38 @@
+package string.assigment_problems;
+
+public class M5_MovieReviewProfiler {
+
+    public static void classifyWordLengths(String review) {
+        if (review == null || review.trim().isEmpty()) {
+            System.out.println("Short: 0 | Medium: 0 | Long: 0");
+            return;
+        }
+
+        String[] words = review.trim().split("\\s+");
+        int shortCount = 0;
+        int mediumCount = 0;
+        int longCount = 0;
+
+        for (String word : words) {
+            // Strip any trailing or leading punctuation if needed, but word length is based on letters
+            // As per problem description: Short (1-4 letters), Medium (5-8 letters), Long (9+ letters)
+            int len = word.length();
+            if (len >= 1 && len <= 4) {
+                shortCount++;
+            } else if (len >= 5 && len <= 8) {
+                mediumCount++;
+            } else if (len >= 9) {
+                longCount++;
+            }
+        }
+
+        System.out.printf("Short: %d | Medium: %d | Long: %d%n",
+                shortCount, mediumCount, longCount);
+    }
+
+    public static void main(String[] args) {
+        String review = "This movie was absolutely fantastic and thrilling";
+        System.out.println("Review: \"" + review + "\"");
+        classifyWordLengths(review);
+    }
+}
