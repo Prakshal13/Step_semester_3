@@ -1,5 +1,24 @@
 # Step_semester_3
 
+## Date: 12-09-2026
+
+**Today's Work:**
+- Studied Access Modifiers (private, default, protected, public) and visibility rules.
+- Practiced cross-package inheritance rules and reference typing for protected members.
+- Implemented encapsulation guards with boundary-safe state transitions and constructor validation.
+- Built JavaBean-compliant classes with convenience constructors and write-only/write-once properties.
+- Solved Week 5 Category B practice problems on access control and immutability.
+- Completed Week 5 Category B assignment problems on member reach, circulation guards, and defensive copying.
+
+**Next Session Plan:**
+- Inheritance, Abstract Classes, and Interfaces.
+
+
+**Issues Faced:**
+- None
+
+---
+
 ## Date: 29-08-2026
 
 **Today's Work:**
